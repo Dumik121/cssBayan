@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(160, 223, 188);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color:rgb(77, 124, 124);
+}
+.section:hover{
+    color:rgb(20, 17, 17);
+    cursor: pointer;
+}
+.CSS_Bayan {
+  font-size: 220%;
+  color:rgb(20, 17, 17);
+}
+.CSS_Bayan::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+.containerMeme_1{
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+}
+.meme_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Firstmeme {
+  font-size: 185%;
+  font-weight: 500;
+}
+.plus{
+  width: 40px;
+  height: 40px;
+  transition: 0.35s;
+}
+
+.FirstImgMeme {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 0%;
+  height: 0px;
+  transition: 0.5s;
+}
+
+.containerMeme_1:hover .FirstImgMeme {
+  max-width: 74%;
+  height: 519px;
+  transition: 0.5s;
+}
+.containerMeme_1:hover .plus{
+    transform: rotate(45deg);
+    transition: 0.35s;
+
+}
