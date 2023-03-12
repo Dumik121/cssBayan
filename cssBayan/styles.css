@@ -15,9 +15,7 @@ body {
   margin-right: auto;
   color: rgb(87, 89, 214);
 }
-.section:hover {
-  color: rgb(20, 17, 17);
-}
+
 .CSS_Bayan {
   font-size: 220%;
   color: rgb(20, 17, 17);
@@ -75,19 +73,25 @@ body {
   color: rgb(87, 89, 214);
 }
 
-.containerMeme_1:hover .FirstImgMeme {
-  max-width: 40%;
-  height: 0%;
-  transition: 0.5s;
-}
-.containerMeme_1:hover .plus {
-  transform: rotate(45deg);
-  transition: 0.35s;
+@media (hover: hover) {
+  .section:hover {
+    color: rgb(20, 17, 17);
+  }
+  .containerMeme_1:hover .FirstImgMeme {
+    max-width: 40%;
+    height: 0%;
+    transition: 0.5s;
+  }
+  .containerMeme_1:hover .plus {
+    transform: rotate(45deg);
+    transition: 0.35s;
+  }
+
+  .section:not(:hover) .plus {
+    opacity: 0;
+  }
 }
 
-.section:not(:hover) .plus {
-  opacity: 0;
-}
 .inputCheck {
   display: none;
 }
@@ -96,7 +100,6 @@ body {
     font-size: 100%;
   }
 }
-
 @media screen and (max-width: 568px) {
   body {
     font-size: 80%;
