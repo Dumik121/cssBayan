@@ -14,6 +14,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   color: rgb(87, 89, 214);
+  cursor: pointer;
 }
 
 .CSS_Bayan {
@@ -29,11 +30,12 @@ body {
 .containerMeme_1 {
   border-bottom: 1px solid gray;
   margin-top: 10px;
-  cursor: pointer;
+
 }
 .label {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .Firstmeme {
   font-size: 185%;
@@ -42,6 +44,7 @@ body {
 .meme_1 {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .plus {
   width: 40px;
@@ -69,10 +72,10 @@ body {
 .inputCheck:checked + .label .meme_1 > .Firstmeme {
   color: rgb(20, 17, 17);
 }
-.label:active {
+.containerMeme_1:active {
   opacity: 0.7;
 }
-.label:active .containerMeme_1 .meme_1 > .Firstmeme {
+.containerMeme_1:active .label .meme_1 > .Firstmeme {
   color: rgb(87, 89, 214);
 }
 
