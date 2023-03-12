@@ -31,14 +31,17 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
-.meme_1 {
+.label {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 .Firstmeme {
   font-size: 185%;
   font-weight: 500;
+}
+.meme_1 {
+  display: flex;
+  justify-content: space-between;
 }
 .plus {
   width: 40px;
@@ -55,15 +58,15 @@ body {
   height: 0px;
   transition: 0.5s;
 }
-.inputCheck:checked + .label .containerMeme_1 > .FirstImgMeme {
+.inputCheck:checked + .label > .FirstImgMeme {
   max-width: 40%;
   height: 0%;
   transition: 0.5s;
 }
-.inputCheck:checked + .label .containerMeme_1 .meme_1 > .plus {
+.inputCheck:checked + .label .meme_1 > .plus {
   transform: rotate(45deg);
 }
-.inputCheck:checked + .label .containerMeme_1 .meme_1 > .Firstmeme {
+.inputCheck:checked + .label .meme_1 > .Firstmeme {
   color: rgb(20, 17, 17);
 }
 .label:active {
