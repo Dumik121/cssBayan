@@ -11,11 +11,11 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color:rgb(77, 124, 124);
+  color:rgb(87, 89, 214);
 }
 .section:hover{
     color:rgb(20, 17, 17);
-    cursor: pointer;
+
 }
 .CSS_Bayan {
   font-size: 220%;
@@ -30,6 +30,7 @@ body {
 .containerMeme_1{
     border-bottom: 1px solid gray;
     margin-top: 10px;
+    cursor: pointer;
 }
 .meme_1 {
   display: flex;
@@ -55,6 +56,23 @@ body {
   height: 0px;
   transition: 0.5s;
 }
+.inputCheck:checked +.label  .containerMeme_1 > .FirstImgMeme {
+  max-width: 74%;
+  height: 519px;
+  transition: 0.5s;
+}
+.inputCheck:checked +.label  .containerMeme_1 .meme_1> .plus {
+  transform: rotate(45deg);
+}
+.inputCheck:checked +.label  .containerMeme_1 .meme_1> .Firstmeme {
+ color: rgb(20, 17, 17);
+}
+.label:active{
+  opacity: 0.7;
+}
+.label:active .containerMeme_1 .meme_1> .Firstmeme{
+  color:rgb(87, 89, 214)
+}
 
 .containerMeme_1:hover .FirstImgMeme {
   max-width: 74%;
@@ -65,4 +83,10 @@ body {
     transform: rotate(45deg);
     transition: 0.35s;
 
+}
+.section:not(:hover) .plus {
+  opacity: 0;
+}
+.inputCheck{
+display: none;
 }
