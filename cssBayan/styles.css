@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(160, 223, 188);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 120%;
+}
+.section {
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(87, 89, 214);
+  cursor: pointer;
+}
+
+.CSS_Bayan {
+  font-size: 220%;
+  color: rgb(20, 17, 17);
+}
+.CSS_Bayan::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+.containerMeme_1 {
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Firstmeme {
+  font-size: 185%;
+  font-weight: 500;
+}
+.meme_1 {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.plus {
+  width: 40px;
+  height: 40px;
+  transition: 0.35s;
+}
+
+.FirstImgMeme {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 0%;
+  height: 0px;
+  transition: 0.5s;
+}
+.inputCheck:checked + .label > .FirstImgMeme {
+  max-width: 40%;
+  height: 0%;
+  transition: 0.5s;
+}
+.inputCheck:checked + .label .meme_1 > .plus {
+  transform: rotate(45deg);
+}
+.inputCheck:checked + .label .meme_1 > .Firstmeme {
+  color: rgb(20, 17, 17);
+}
+.containerMeme_1:active {
+  opacity: 0.7;
+}
+.containerMeme_1:active .label .meme_1 > .Firstmeme {
+  color: rgb(87, 89, 214);
+}
+
+@media (hover: hover) {
+  .section:hover {
+    color: rgb(20, 17, 17);
+  }
+  .containerMeme_1:hover .FirstImgMeme {
+    max-width: 40%;
+    height: 0%;
+    transition: 0.5s;
+  }
+  .containerMeme_1:hover .plus {
+    transform: rotate(45deg);
+    transition: 0.35s;
+  }
+
+  .section:not(:hover) .plus {
+    opacity: 0;
+  }
+}
+
+.inputCheck {
+  display: none;
+}
+@media screen and (max-width: 1180px) {
+  body {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  body {
+    font-size: 80%;
+  }
+}
